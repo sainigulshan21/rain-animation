@@ -1,0 +1,102 @@
+:root{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    background-color: skyblue;
+    overflow: hidden;
+}
+.cont{
+    position: relative;
+    top: 100px;
+}
+span{
+    background-color: #311fd3;
+    height: 10px;
+    width: 3px;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+    animation-delay: calc(var(--i)* -.5s);
+}
+@keyframes spin {
+    0%{
+        transform: translateY(0) ;
+    }
+    50%{
+        transform: translateY(300px)
+    }
+    100%{
+        transform: translateY(600px);
+    }
+    
+}
+.box{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* width: 50vw; */
+}
+
+.cloud1{
+    height: 70px;
+    width: 100px;
+    background-color: rgb(95, 95, 248);
+    border-radius: 85%;
+    border-bottom-left-radius:100% ;
+    border-top-left-radius:100% ;
+    transform: rotate(20deg);
+}
+.cloud2{
+    position: relative;
+    left: -50px;
+    top: -10px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(95, 95, 248);
+    border-radius: 45%;
+    transform: rotate(120deg);
+}
+.cloud3{
+    position: relative;
+    top: 10px;
+    transform: rotate(20deg);
+    left: -100px;
+    height: 70px;
+    border-bottom-right-radius:100% ;
+    width: 100px;
+    background-color: rgb(95, 95, 248);
+    border-radius: 45%;
+}
+.cloud4{
+    height: 70px;
+    width: 100px;
+    background-color: rgb(95, 95, 248);
+    border-radius: 85%;
+    border-bottom-left-radius:100% ;
+    border-top-left-radius:100% ;
+    transform: rotate(20deg);
+    position: relative;
+    left: -80px;
+}
+.cloud5{
+    position: relative;
+    left: -130px;
+    top: -10px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(95, 95, 248);
+    border-radius: 45%;
+    transform: rotate(120deg);
+}
+.cloud6{
+    position: relative;
+    top: 10px;
+    transform: rotate(20deg);
+    left: -180px;
+    height: 70px;
+    border-bottom-right-radius:100% ;
+    width: 100px;
+    background-color: rgb(95, 95, 248);
+    border-radius: 45%;
+}
